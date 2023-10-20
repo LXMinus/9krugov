@@ -1,6 +1,8 @@
 <template>
   <div id="app" class="wrapper">
-    <h1>9кругов</h1>
+    <router-link to="/">
+      <h1>9кругов</h1>
+    </router-link>
     <router-view/>
   </div>
 </template>
@@ -24,6 +26,7 @@ export default {
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   color: #2c3e50;
+  text-decoration: none;
 }
 body{
   margin: 0 !important;
@@ -33,6 +36,9 @@ body{
   height: 100vh;
   background: #232729;
 }
+a{
+  text-decoration: none;
+}
 h1{
   color: #D5D5D5;
   font-family: Jost;
@@ -41,6 +47,7 @@ h1{
   text-align: center;
   margin: 0;
   padding: 30px 0 0 0;
+
 }
 h1:hover{
   color: #FFFFFF;
