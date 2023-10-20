@@ -12,6 +12,15 @@ export default {
 </script>
 
 <style>
+
+@font-face {
+  font-family: "Jost";
+  src: local("Jost"), url(./fonts/Jost-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"), url(./fonts/Nunito-Regular.ttf) format("truetype");
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   color: #2c3e50;
@@ -26,6 +35,8 @@ body{
 }
 h1{
   color: #D5D5D5;
+  font-family: Jost;
+  font-weight: 600;
   font-size: 50px;
   text-align: center;
   margin: 0;
