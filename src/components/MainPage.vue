@@ -173,6 +173,7 @@ export default {
     color: #D5D5D5;
     font-size: 30px;
     font-family: Nunito;
+    padding: 20px 0;
   }
   .main_page__section__link_section__block > a:hover{
     border: 3px solid #FFFFFF;

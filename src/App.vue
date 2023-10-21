@@ -24,17 +24,61 @@ export default {
   src: local("Nunito"), url(./fonts/Nunito-Regular.ttf) format("truetype");
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  color: #2c3e50;
+  font-family: Nunito, sans-serif;
+  color: #FFFFFF;
   text-decoration: none;
 }
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  list-style: none;
+}
+
+input {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 body{
   margin: 0 !important;
 }
 .wrapper{
   width: 100%;
   height: 100vh;
-  background: #232729;
+  background: #151719;
 }
 a{
   text-decoration: none;
