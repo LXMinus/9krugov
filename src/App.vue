@@ -90,7 +90,7 @@ h1{
   font-size: 50px;
   text-align: center;
   margin: 0;
-  padding: 30px 0 0 0;
+  padding: 10px 0 0 0;
 
 }
 h1:hover{
