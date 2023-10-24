@@ -20,7 +20,7 @@ export default {
 
 <style scoped>
   .for_page__section{
-    width: 70%;
+    width:50%;
     margin: 50px auto 0 auto;
     display: flex;
     flex-direction: column;

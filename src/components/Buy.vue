@@ -64,19 +64,19 @@ export default {
     padding: 40px 0 0 0;
   }
   .buy_page__section__link_section{
-    width: 80%;
+    width: 60%;
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
   }
   .buy_page__section__link_section__block{
-    width: 45%;
+    width: 47.5%;
     display: flex;
     justify-content: space-between;
   }
   .buy_page__section__link_section__block > a{
     height: 360px;
-    width: 37%;
+    width: 45%;
     border: 3px solid #D5D5D5;
     border-radius: 25px;
     display: flex;
