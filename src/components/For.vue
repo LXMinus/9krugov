@@ -13,9 +13,11 @@
       <div class="for_page__section__content">
         <ul>
           <li>Посвящена насыщенной студенческой жизни и учёбе в университете</li>
-          <li>Идеально подойдет для знакомства в компании, внутри множество миниигр на общение</li>
-          <li>Отлично подходит для первого знакомства с настольными играми</li>
-          <li>Внутри множество шуток и отсылок, но главное здесь - юмор самих игроков. Проводите время с удовольствием!</li>
+          <li>Идеально подойдет для знакомства в компании, внутри множество миниигр на знакомство и общение</li>
+          <li>Отлично подходит и для первого знакомства с настольными играми, и для опытных настольщиков.</li>
+          <li>Вам не обязательно быть студентом, чтобы получать удовольствие от игры. Она использует общие принципы и механики, понятные и привычные любым возрастам.</li>
+          <li>Школьникам она покажет студенческую жизнь во всём её многообразии, а взрослым позволит вспомнить свои студенческие годы и повеселиться.</li>
+          <li>В игре множество шуток и отсылок, но главное здесь - юмор самих игроков. Проводите время с удовольствием!</li>
         </ul>
       </div>
     </div>
@@ -35,11 +37,30 @@ export default {
     flex-direction: column;
     align-items: center;
   }
+  .for_page__section__content{
+    overflow-y: scroll;
+    max-height: 600px;
+    margin-top: 50px;
+  }
+  .for_page__section__content::-webkit-scrollbar{
+    width: 12px;
+  }
+  .for_page__section__content::-webkit-scrollbar-track{
+    background: #D5D5D5;
+    border-radius: 20px;
+  }
+  .for_page__section__content::-webkit-scrollbar-thumb{
+    border: 2px solid #151719;
+    height: 12px;
+    width: 12px;
+    background: #FFFFFF;
+    border-radius: 20px;
+  }
   .for_page__section__text_block{
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 50px auto 0 auto;
+    margin-top: -20px;
   }
   .for_page__section__text_block > h2{
     font-family: Jost;
@@ -51,6 +72,9 @@ export default {
     overflow-wrap: break-word;
     list-style-type: "\1F44D";
     text-indent: 15px;
+  }
+  .for_page__section__content > ul li:first-of-type{
+    margin-top: 0;
   }
   .for_page__section__content > ul{
     padding: 20px 60px;
