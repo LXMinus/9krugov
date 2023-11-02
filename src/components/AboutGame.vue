@@ -17,8 +17,10 @@
           <li class="two_li">Есть два режима игры:</li>
           <li>
             <ul class="podpuncts">
-              <li class="podpuncts__child_li">Короткий - приключение на 2-3 часа, вы постараетесь выжить и закончить первые два года учёбы.</li>
-              <li class="podpuncts__old_li">Полный - вы сможете полностью посмотреть игру (не для слабонервных). Более спокойное и комфортное общение на 4-5 часов, за которые вы сможете полностью окончить университет.</li>
+              <li class="podpuncts__child_li">Классический* - приключение на 2-3 часа, вы постараетесь выжить и закончить первые два года учёбы.</li>
+              <li class="podpuncts__old_li">Долгий* - вы сможете полностью посмотреть игру (не для слабонервных). Более спокойное и комфортное общение на 4-5 часов, за которые вы сможете полностью окончить университет.</li>
+              <li>*Классический - вы сможете полностью посмотреть игру (не для слабонервных). Более спокойное и комфортное общение на 4-5 часов, за которые вы полностью окончите университет. Мы рекомендуем начать с Быстрого варианта, особенно если вы играете в не совсем знакомой компании.</li>
+              <li>*Долгий же вариант подойдет для хардкорных опытных настольщик, которые хотят получить настоящий вызов от игры.</li>
             </ul>
           </li>
         </ul>
@@ -40,11 +42,30 @@ export default {
     flex-direction: column;
     align-items: center;
   }
+  .about_game_page__section__content{
+    overflow-y: scroll;
+    max-height: 600px;
+    margin-top: 50px;
+  }
+  .about_game_page__section__content::-webkit-scrollbar{
+    width: 12px;
+  }
+  .about_game_page__section__content::-webkit-scrollbar-track{
+    background: #D5D5D5;
+    border-radius: 20px;
+  }
+  .about_game_page__section__content::-webkit-scrollbar-thumb{
+    border: 2px solid #151719;
+    height: 12px;
+    width: 12px;
+    background: #FFFFFF;
+    border-radius: 20px;
+  }
   .about_game_page__section__text_block{
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 0 auto ;
+    margin-top: -20px;
   }
   .about_game_page__section__text_block > h2{
     font-family: Jost;
@@ -55,6 +76,9 @@ export default {
     font-size: 30px;
     overflow-wrap: break-word;
     text-indent: 15px;
+  }
+  .about_game_page__section__content > ul li:first-of-type{
+    margin-top: 0;
   }
   .adoult_li{
     list-style-type: "\1F47E";
@@ -67,9 +91,6 @@ export default {
   }
   .about_game_page__section__content > ul{
     padding: 20px 60px;
-  }
-  .podpuncts{
-    padding: 0 0 0 70px;
   }
   .podpuncts__child_li{
     list-style-type: "\1F476";

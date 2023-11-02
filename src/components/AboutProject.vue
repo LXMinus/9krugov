@@ -12,9 +12,14 @@
       <h2>Информация о проекте:</h2>
       <div class="about_project_page__section__content">
         <ul>
-          <li>Изначально создавался для адаптации первокурсников к среде университета, их знакомства и общения.</li>
-          <li>Можно узнать о различных студ. мероприятиях, форумах, объединениях и активностях.</li>
+          <li>Изначально, это была не только настольная игра, но целый проект.Он создавался для комфортной адаптации первокурсников к среде университета, их знакомства и общения.</li>
+          <li>В игре  можно узнать о различных студ. мероприятиях, форумах, объединениях и активностях.</li>
+          <li>Было выявлено, что игровая форма гораздо лучше усвоению информации и помогает лучше узнавать друг друга, особенно когда есть общий враг. Поэтому игра исключительно командная, где важен каждый участник.</li>
           <li>Наш главный лозунг: "Учиться должно быть весело!"</li>
+          <li>Изначальная концепция создавалась на протяжение двух лет. Необходима была идеальная формула продукта и мы считаем, что это получилось.</li>
+          <li>Первые прототипы игры были созданы в Word и напечатаны, благодаря сотрудничеству с университетом СамГУПС. После всего все карточки, жетоны, поля вырезались вручную автором.</li>
+          <li>Впервые проект увидел свет в 2023 году на Всероссийском студенческом конкурсе "Твой ход". Там он получил большое признание других участников конкурса. До этого проводилось множество мероприятий среди студентов родного ВУЗа автора, где проект так же тепло приняли.</li>
+          <li>В результате получилась настольная игра, насладиться которой можете теперь и вы! И я очень надеюсь, что вам понравится.</li>
         </ul>
       </div>
     </div>
@@ -34,11 +39,30 @@ export default {
     flex-direction: column;
     align-items: center;
   }
+  .about_project_page__section__content{
+    overflow-y: scroll;
+    max-height: 600px;
+    margin-top: 50px;
+  }
+  .about_project_page__section__content::-webkit-scrollbar{
+    width: 12px;
+  }
+  .about_project_page__section__content::-webkit-scrollbar-track{
+    background: #D5D5D5;
+    border-radius: 20px;
+  }
+  .about_project_page__section__content::-webkit-scrollbar-thumb{
+    border: 2px solid #151719;
+    height: 12px;
+    width: 12px;
+    background: #FFFFFF;
+    border-radius: 20px;
+  }
   .about_project_page__section__text_block{
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 50px auto 0 auto;
+    margin-top: -20px;
   }
   .about_project_page__section__text_block > h2{
     font-family: Jost;
@@ -50,6 +74,9 @@ export default {
     overflow-wrap: break-word;
     list-style-type: "\1F44C";
     text-indent: 15px;
+  }
+  .about_project_page__section__content > ul li:first-of-type{
+    margin-top: 0;
   }
   .about_project_page__section__content > ul{
     padding: 20px 60px;
